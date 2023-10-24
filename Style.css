@@ -3,7 +3,7 @@ body {
     color: green;
 }
 /* Styling the list of items in the nav bar*/
-nav u1 {
+nav ul {
     display:flex;
     flex-wrap:wrap;
     margin:0;
@@ -16,7 +16,9 @@ nav li {
     color:antiquewhite;
     margin:0;
     flex:1;
+    min-width: 200px;
     text-align:center;
+    display:flex
 }
 /* Styling the link, both unvisited and visted */
 nav a, nav a:visited{
@@ -26,7 +28,7 @@ nav a, nav a:visited{
     color:antiquewhite;
 }
 /* Hovering over a link */
-nav a:hover {
+nav a:hover, nav a.active{
     color:green;
-    background-color:rgb(173, 230, 160,);
+    background-color: rgb(173,230,160);
 }
